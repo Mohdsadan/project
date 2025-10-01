@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Service Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 8%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .quote-btn {
+      background: #ff004f;
+      color: #fff;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 8%;
+      background: linear-gradient(to right, #ffe6eb, #fff);
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 550px;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text h1 span {
+      color: #ff004f;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .btn-primary {
+      background: #ff004f;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn-secondary {
+      background: #333;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero-img img {
+      max-width: 380px;
+      border-radius: 10px;
+    }
+
+    .stats {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .rating {
+      font-size: 18px;
+      font-weight: bold;
+      background: #fff;
+      padding: 10px 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .delivered {
+      font-size: 18px;
+      font-weight: bold;
+      background: #fff;
+      padding: 10px 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Section */
+    .section-title {
+      text-align: center;
+      margin: 50px 0 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 8% 50px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ff004f;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">COMPANY<br>Tagline</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+    <button class="quote-btn">Get A Quote</button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Your Resume <span>Deserves A Yes</span> Let’s Make It Happen</h1>
+      <p>You are not just a job applicant, you are a professional. ATS-friendly resume that makes you stand out from the crowd. Let’s create the best resume for your dream job together.</p>
+      <div class="btn-group">
+        <button class="btn-primary">Resume Packages</button>
+        <button class="btn-secondary">Contact Us</button>
+      </div>
+
+      <div class="stats">
+        <div class="rating">⭐ 4.9 Instructor Rating</div>
+        <div class="delivered">🎓 260+ Resumes Delivered</div>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://i.ibb.co/9nTLNwW/student.png" alt="Student">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <h2 class="section-title">You’re Not Just Another Applicant And Your Resume Shouldn’t Look Like One</h2>
+  <div class="features">
+    <div class="card">
+      <h3>A Resume That Passes ATS</h3>
+      <p>Get your resume ATS-ready, keyword-optimized, and tailored to beat applicant tracking systems.</p>
+    </div>
+    <div class="card">
+      <h3>A Cover Letter That Gets Read</h3>
+      <p>Stand out with a custom cover letter that grabs recruiters’ attention and wins interviews.</p>
+    </div>
+    <div class="card">
+      <h3>A LinkedIn Profile That Works</h3>
+      <p>Attract HRs, clients, and recruiters with a LinkedIn profile that positions you as a leader.</p>
+    </div>
+    <div class="card">
+      <h3>Interview Confidence</h3>
+      <p>Interview preparation that boosts your confidence and makes you shine in every interview.</p>
+    </div>
+  </div>
+</body>
+</html>
